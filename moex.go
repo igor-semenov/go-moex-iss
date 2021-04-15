@@ -1,11 +1,16 @@
 package moex_iss
 
+import "net/http"
+
 type Client struct {
+  Http *http.Client
 }
 
-func NewMoexClient() {
+func NewClient(client *http.Client) *Client {
+  return &Client{Http: client}
 }
 
-func (moex *Client) GetAllSecurities(q string) {
+func (moex *Client) GetSecInfo(ticker string) (*MoexSecInfo, error) {
+  return nil, nil
 }
 
