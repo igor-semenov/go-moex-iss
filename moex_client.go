@@ -1,4 +1,4 @@
-package main
+package moex_iss
 
 import "fmt"
 import "go-moex-iss"
